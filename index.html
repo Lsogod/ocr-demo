@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>阿里云手写识别OCR</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="main.js"></script> <!-- 引入优化后的JS文件 -->
+</head>
+
+<body>
+    <img id="aliyun-logo" src="/logo/logo.png" alt="阿里云的logo">
+    <h1>阿里云手写体识别OCR</h1>
+    <form id="uploadForm" enctype="multipart/form-data">
+        <div class="file-input">
+            <label for="file">
+                <input type="file" name="file" id="file">
+            </label>
+            <button type="submit">识别</button>
+        </div>
+    </form>
+    <div id="result">
+        <div id="label">
+            <span">识别结果</span>
+        </div>
+
+        <span style="display:block;" class="textarea" id="result-label"></span>
+    </div>
+    <div id="loading">识别中，请稍候...</div>
+    </div>
+</body>
+
+</html>
